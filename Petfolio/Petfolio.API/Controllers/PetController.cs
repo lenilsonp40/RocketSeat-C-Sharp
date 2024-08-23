@@ -47,7 +47,13 @@ namespace Petfolio.API.Controllers
 
             return NoContent();
         }
-        
+
+        [HttpGet]
+        [Route("{id}")]
+        public IActionResult Get(int id) 
+        {
+            return Ok();
+        }
 
     }
 }
